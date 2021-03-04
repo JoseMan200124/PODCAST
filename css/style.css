@@ -29,7 +29,7 @@ body, html{
     right: 0;
     top: 0;
     bottom: 0;
-    background-color:(0, 0, 0, .8); 
+background-color: rgba(0, 0, 0, .8);
     z-index: 1; 
 }
 .nav{
@@ -42,5 +42,42 @@ body, html{
     justify-content: space-between; 
     align-content: center; 
     padding: 0 80px; 
+    
+}
+.logo{
+    font-size: 30px; 
+    font-weight: 900;
+    cursor:pointer; 
+}
+.cart{
+    font-size: 30px; 
+    cursor: pointer; 
+    
+}
+.hamburguer{
+ position: relative; 
+    cursor: pointer; 
+    
+}
+.hamburguer, 
+.hamburguer::before, 
+.hamburguer::after{
+    width:30px ;
+    height: 3px; 
+    border-radius: .5rem; 
+    background-color: var(--white);
+}
+
+.hamburguer::before, 
+.hamburguer::after{
+ content: '';
+    position: absolute; 
+    left: 0;
+}
+hamburguer::before{
+    top:10px;
+}
+.hamburguer::after{
+    top:-10px ; 
     
 }
