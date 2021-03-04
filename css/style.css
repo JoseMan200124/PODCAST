@@ -1,0 +1,46 @@
+:root{
+    --bg-color: #F0F0F0; 
+    --txt-color: #221E22;
+    --yellow: #e29f01; 
+    --white: #fff; 
+}
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+font-family: 'Rubik', sans-serif;
+}
+body, html{
+    position: relative;
+    overflow: hidden; 
+    
+}
+.container{
+    height: 100vh; 
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color:(0, 0, 0, .8); 
+    z-index: 1; 
+}
+.nav{
+    z-index: 99; 
+    color: var(--white);
+    display: flex; 
+    top: 0; 
+    width: 100%; 
+    height: 80px; 
+    justify-content: space-between; 
+    align-content: center; 
+    padding: 0 80px; 
+    
+}
