@@ -31,7 +31,7 @@ body, html{
     top: 0;
     bottom: 0;
 background-color: rgba(0, 0, 0, .8);
-    z-index: 1; 
+    z-index: 0; 
 }
 .nav{
     z-index: 5; 
@@ -61,6 +61,8 @@ background-color: rgba(0, 0, 0, .8);
 }
 .menu{
     animation: left-to-right 1.5s forwards;
+    margin: 1rem 0 0 0;
+    z-index: 101;
 }
 .hamburguer{
  position: relative; 
@@ -255,6 +257,7 @@ height: 100%;
     height: 100%;
     align-items: center;
     transition: 1s ease-in-out;
+    animation: bottom-up 2s;
     
 }
 .slide:nth-child(1){
@@ -350,3 +353,75 @@ height: 100%;
         transform: translateX(0);
     }
 }
+@media only screen and (max-width:1024px){
+    .info{
+        align-items: flex-start;    
+    }
+    .info h1{
+           font-size: 110px;
+           text-align: left;
+       }
+     .info p{
+          font-size: 14px; 
+       }
+    .info button{
+           font-size: 20px;
+           padding: 10px 20px;
+       }
+     product-info{
+        padding: 0 20px; 
+    }
+     .slider{
+        width: 80%;
+        height: 50%;
+        transform: translateY(20%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+   .col-5, 
+    .col-7{
+        width: 100%;
+        height: 50%;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .info{
+        align-items: flex-start;
+    }
+    .info h1{
+        font-size: 63px;
+        line-height: 60px;
+        text-align: left;
+    }
+    .info p{
+        font-size: 12px;
+    }
+    .info button{
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    .product-info{
+        padding: 0 20px;
+    }
+    .col-7{
+        align-items: flex-start;
+    }
+    .slider{
+       width: 80%;
+        height: 80%;
+        transform: translateY(20%);
+        padding: 50px;
+    }
+    
+}
+
+ 
+       
+      
+       
+   
+   
+
+
