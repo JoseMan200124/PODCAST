@@ -353,6 +353,38 @@ height: 100%;
         transform: translateX(0);
     }
 }
+@media only screen and (max-width: 425px) {
+   
+     .info h1{
+        font-size: 43px!important;
+       
+    }
+    .nav{
+        padding: 0 70px; 
+    }
+}
+     @media only screen and (max-width: 365px) {
+   
+     .info h1{
+        font-size: 43px!important;
+       
+    }
+    .nav{
+        padding: 0 50px; 
+    }
+}
+   @media only screen and (max-width: 329px) {
+   
+     .info h1{
+        font-size: 43px!important;
+       
+    }
+    .nav{
+        padding: 0 20px; 
+    }
+}
+   
+   
 @media only screen and (max-width:1024px){
     .info{
         align-items: flex-start;    
@@ -418,8 +450,8 @@ height: 100%;
 }
 
  
-       
-      
+  
+   
        
    
    
