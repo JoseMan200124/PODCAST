@@ -168,7 +168,7 @@ height: 100%;
     margin: 20px 0;
     text-align: justify;
 }
-.info button{
+.info .play{
     font-size: 20px;
     padding: 10px 30px;
     border-radius: 30px;
@@ -180,7 +180,7 @@ height: 100%;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
 }
-.info button:hover{
+.info .play:hover{
     background-color: var(--white);
     color: var(--black);
 }
@@ -198,17 +198,17 @@ height: 100%;
 .product-info h1, 
 .product-info>span,
 .product-info p, 
-.product-info button{
+.product-info .play{
     opacity: 0;
     transition: unset;   
 }
-.product-info button{
+.product-info .play{
     transition-delay:.2s;
 }
 .product-info.active h1, 
 .product-info.active>span,
 .product-info.active p, 
-.product-info.active button{
+.product-info.active .play{
     opacity: 1;
     transition: opacity 1s, 
        transform 1.2s,
@@ -230,11 +230,11 @@ height: 100%;
     right: 80px;
     
 }
-.product-info p, .product-info button{
+.product-info p, .product-info .play{
   transform: translateY(100px);
 }
 .product-info.active p, 
-.product-info.active button{
+.product-info.active .play{
   transform: translateY(0);
 }
 [class*="col-"]{
@@ -396,7 +396,7 @@ height: 100%;
      .info p{
           font-size: 14px; 
        }
-    .info button{
+    .info .play{
            font-size: 20px;
            padding: 10px 20px;
        }
@@ -430,7 +430,7 @@ height: 100%;
     .info p{
         font-size: 12px;
     }
-    .info button{
+    .info .play{
         font-size: 20px;
         padding: 10px 20px;
     }
@@ -449,11 +449,23 @@ height: 100%;
     
 }
 
- 
-  
-   
-       
-   
-   
-
-
+@-webkit-keyframes delay {
+  0%, 40%, 100% {
+    transform: scaleY(0.05);
+    -webkit-transform: scaleY(0.05);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes delay {
+  0%, 40%, 100% {
+    transform: scaleY(0.05);
+    -webkit-transform: scaleY(0.05);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
