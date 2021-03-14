@@ -120,7 +120,7 @@ img {
     padding: 0 12px;
     display: block;
     height: 35px;
-    font-size: 14px;
+    font-size: 40px!important;
     line-height: 34px; }
   .classynav ul li .megamenu li a {
     padding: 0 12px; }
